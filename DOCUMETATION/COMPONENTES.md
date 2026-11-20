@@ -13,6 +13,6 @@ Materiales y especificaciones técnicas del hardware utilizado para el ensamblaj
 9. (1) Cable: USB Tipo-A a USB Tipo-C, utilizado para la alimentación de la placa y programar el firmware mediante el IDE Thonny.
 
 
-### Notas Técnicas de Implementación
+### Notas
 * **Adaptación a Ánodo Común:** A diferencia de un display de cátodo común tradicional, el componente utilizado comparte el terminal positivo (`3V3`). Esta característica fue contemplada tanto en el cableado físico como en la bandera `DISPLAY_ANODO_COMUN = True` dentro del código fuente (`CODE/main.py`).
-* **Gestión de Banderas (Overflow):** Para optimizar el número de componentes externos, la bandera de desbordamiento (*Overflow*) hace uso directo del LED RGB WS2812 (NeoPixel) integrado en la placa RP2040 Zero.
+
