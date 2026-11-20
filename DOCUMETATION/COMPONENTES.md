@@ -16,4 +16,8 @@ Materiales y especificaciones técnicas del hardware utilizado para el ensamblaj
 ### Notas
 
 - Adaptación a Ánodo Común: A diferencia de un display de cátodo común tradicional, el componente utilizado comparte el terminal positivo (3V3). Esta característica fue contemplada tanto en el cableado físico como en la bandera DISPLAY_ANODO_COMUN = True dentro del código fuente (CODE/main.py).
+- 
+## Cambios en el código:
 
+- Se agregó la variable SEGMENTO_APAGADO = 1 if DISPLAY_ANODO_COMUN else 0 y se pasó como parámetro value=SEGMENTO_APAGADO al instanciar cada pin en segment_pins, garantizando que el display arranque completamente apagado desde el encendido de la placa.
+- Se implementó una condición para invertir la salida cuando DISPLAY_ANODO_COMUN es True (0 if state else 1), ya que en Ánodo Común los segmentos cierran circuito a tierra (0 lógico) para encenderse.
