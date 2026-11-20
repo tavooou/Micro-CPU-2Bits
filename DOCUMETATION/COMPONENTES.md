@@ -14,5 +14,6 @@ Materiales y especificaciones técnicas del hardware utilizado para el ensamblaj
 
 
 ### Notas
-* **Adaptación a Ánodo Común:** A diferencia de un display de cátodo común tradicional, el componente utilizado comparte el terminal positivo (`3V3`). Esta característica fue contemplada tanto en el cableado físico como en la bandera `DISPLAY_ANODO_COMUN = True` dentro del código fuente (`CODE/main.py`).
+
+- Adaptación a Ánodo Común: A diferencia de un display de cátodo común tradicional, el componente utilizado comparte el terminal positivo (3V3). Esta característica fue contemplada tanto en el cableado físico como en la bandera DISPLAY_ANODO_COMUN = True dentro del código fuente (CODE/main.py).
 
